@@ -1,0 +1,18 @@
+From camelcase to db column  name
+
+find
+  /([a-z_]*)([A-Z])(.*?$)/
+
+replace with 
+  /\1_\l\2\3/
+
+repeatedly
+
+
+from db column name to camelcase
+
+find
+  /([a-z]*)_([a-z])/
+
+replace with
+  /\1\u\2/
