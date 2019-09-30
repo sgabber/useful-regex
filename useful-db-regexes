@@ -9,7 +9,8 @@ replace with
 repeatedly
 
 
-from db column name to camelcase
+from db column name to camelcase (table name should be only lowercase and underscores)
+
 
 find
   /([a-z]*)_([a-z])/
