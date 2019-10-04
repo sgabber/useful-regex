@@ -17,3 +17,14 @@ find
 
 replace with
   /\1\u\2/
+
+
+
+find all double quotes out of square brackets (to convert them to single quotes)
+
+find 
+  (?<!\])"(?!\[) 
+replace
+  '
+
+sample case: "["testing","of","regex"]" -> "['testing','of','regex']"
